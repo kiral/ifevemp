@@ -1,0 +1,33 @@
+
+
+
+@import "../../wxParse/wxParse.wxss";
+ .wrapper{
+  padding: 24rpx;
+}
+
+.excerpt{
+  color:#626262; 
+  font-size:32rpx;
+  line-height:64rpx;
+  text-align: left;
+}
+
+.h2{
+  clear:both;
+  border-width:1px 0;
+  color:#666;
+  text-align: center; 
+  font-size:28rpx;
+  line-height:64rpx;
+  font-weight: bold;
+}
+
+.clearfix{
+  margin:5px 15px;
+  display:inline-block;
+}
+
+.wxParse-a{
+    color: #21759b
+}

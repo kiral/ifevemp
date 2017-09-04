@@ -1,0 +1,10 @@
+
+<template name="tempHeader">
+  <view class="header">
+    <image src="../../images/ifeve.png" style="height:120rpx;width:400rpx"></image>
+    <view>
+      并发编程网
+    </view>
+  </view>
+</template>
+<!-- header end -->

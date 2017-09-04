@@ -1,0 +1,17 @@
+
+
+<import src="../../wxParse/wxParse.wxml"/>
+<import src="../../templates/header.wxml"/>
+<view class="container">
+  <!-- <template is="tempHeader" />  -->
+
+  <view>
+       <view class="excerpt">  
+    欢迎光临并发编程网（ifeve.com，以下简称并发网）！并发网致力于让天下没有难学的技术这一使命，成立于2011年10月，从名字可以看出来，并发网创办之初是一个垂直性技术网站，致力于促进并发编程的研究和传播。随着这几年的发展，并发网组织翻译和原创了几百篇技术精品文章，包括Java，C++，JS，开源框架，管理和架构等，所以并发网从最初致力于并发编程的研究和传播，进化成现在的致力于精品技术的研究和传播。
+2014年8月19日本站Alex世界排名三万多名。中国排名三千多名。欢迎关注微信公众号ifeves。
+       </view>  
+      </view>
+      <view>
+
+      </view>
+</view>

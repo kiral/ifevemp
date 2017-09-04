@@ -1,0 +1,8 @@
+
+<template name="tempFooter"> 
+  <view class="header">    
+    <view>
+      © 2011-2017 并发编程网 is proudly powered by WordPress
+    </view>
+  </view>
+</template>

@@ -1,0 +1,76 @@
+
+
+<import src="../../templates/common-list.wxml" />
+<import src="../../templates/copyright.wxml" />
+<view class="container">
+
+
+
+  <view class="header" style="display:{{displayHeader}}">
+    <!-- <image src="../../images/ifeve.png" style="height:120rpx;width:400rpx"></image> -->
+    <view>
+
+    </view>
+  </view>
+
+  <view class="index-header" style="display:{{displaySwiper}}">
+    <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true">
+      <block wx:key="id" wx:for="{{postsShowSwiperList}}">
+        <swiper-item id="{{item.id}}" index="{{index}}" bindtap="redictDetail">
+          <image mode="aspectFill" src="{{item.post_medium_image_300}}" style="width:100%" />
+          <view class="swiper-mask"></view>
+          <view class="swiper-desc">
+            <text>{{item.title.rendered}}</text>
+          </view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+
+
+  <view class="showerror" style="display:{{showerror}}">
+    <image src="../../images/cry80.png" style="height:100rpx;width:100rpx"></image>
+    <view class="errortext">
+      暂时无法访问网络,下拉重试...
+
+    </view>
+  </view>
+
+
+
+  <view style="display:{{showallDisplay}}">
+    <view style="display:{{floatDisplay}}">
+      <form catchsubmit="formSubmit" catchreset="formReset">
+       <view class="search-pancel">
+          <input value="" name="input" confirm-type="搜索" class="search-input" placeholder="搜搜看..." ></input>
+          <button class="search-button" form-type="submit" size="mini" plain="true">
+            <icon type="search" color="#296FD0" size="20"/>
+          </button>
+          <!--
+          <button class="share-button" open-type="share" size="mini" plain="true">转发</button> -->
+        </view>
+      </form>
+    </view>
+    <!-- 加载图文列表 -->
+    <template is="tempCommonList" data="{{postsList}}" />
+
+    <view class="loadingmore" style="display:{{floatDisplay}}">
+      <view hidden="{{isLastPage}}">
+        <button class="more-button" formType="submit" size="mini" bindtap="loadMore">加载更多...</button>
+      </view>
+
+      <view class="no-more" hidden="{{!isLastPage}}">---无更多文章---</view>
+
+    </view>
+
+    <view class="copyright" style="display:{{floatDisplay}}">
+      <template is="tempCopyright" />
+    </view>
+
+  </view>
+
+
+
+
+</view>
